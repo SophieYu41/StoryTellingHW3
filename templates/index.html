@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Presidental Election Popularity Distribution on Twitter</title>
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+	<body>
+		<script type=text/javascript>
+  			$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+		</script>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="static/script.js"></script>
+		<div class="messageBox"><image id="image" src="static/trump.jpg"></div>
+		<center>
+		<h3>Hillary Clinton  VS.  Donald Trump</h3>
+		<div id="table">
+			Rate: <input type="text" id="rate" readonly>
+			Entropy: <input type="text" id="entropy" readonly>
+			Probability for Clinton: <input type="text" id="probability" readonly>
+		</div>
+		<div id="graph">
+		</div>	
+		<div id="chart">
+		</div>	
+		</center>	
+		<div>
+			<ul id="alert"><ul>
+		<div>
+	</body>
+</html>
